@@ -53,8 +53,12 @@ nmap <leader>w :w!<cr>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Display line numbers
-set number
+" 1) absolute
+" set number
+" 2) relative
 " set relativenumber
+" 3) hybrid (absolute+relative)
+set number relativenumber
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
